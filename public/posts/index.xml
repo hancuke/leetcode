@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Leetcode</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Leetcode</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 May 2025 11:59:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week1</title>
+      <link>http://localhost:1313/posts/week1/</link>
+      <pubDate>Sun, 11 May 2025 11:59:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/week1/</guid>
+      <description>1. Two Sum (两数之和) # 1.1 理解题目 # 题目描述：给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出和为目标值 target 的那两个整数，并返回它们的数组下标。 假设：你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。你可以按任意顺序返回答案。 主要考察点：数组遍历、哈希表的使用。 目的：这道题旨在考察你是否能够有效地在数据集合中查找满足特定条件的元素对。它是哈希表应用的入门级经典题目。 1.2 从思路引出最优解决方案 (Go语言实现) # 思路一：暴力枚举 (Brute Force) # 最直观的想法是遍历数组中的每一个元素 x，然后再遍历数组中 x 之后的每一个元素 y，判断 x + y 是否等于 target。&#xA;步骤：&#xA;使用第一层循环遍历数组，假设当前元素是 nums[i]。 使用第二层循环遍历数组中 i 之后的元素，假设当前元素是 nums[j]。 如果 nums[i] + nums[j] == target，那么 [i, j] 就是我们要找的下标。 Go语言实现：&#xA;package main import &amp;#34;fmt&amp;#34; func twoSum_bruteForce(nums []int, target int) []int { n := len(nums) for i := 0; i &amp;lt; n; i++ { for j := i + 1; j &amp;lt; n; j++ { if nums[i]+nums[j] == target { return []int{i, j} } } } return nil // 题目保证有解，这里理论上不会执行 } func main() { nums := []int{2, 7, 11, 15} target := 9 fmt.</description>
+    </item>
+  </channel>
+</rss>
