@@ -1,0 +1,6 @@
+[submodule "book/book/themes/book"]
+	path = book/book/themes/book
+	url = https://github.com/alex-shpak/hugo-book.git
+[submodule "book/themes/book"]
+	path = book/themes/book
+	url = https://gh-proxy.com/github.com/alex-shpak/hugo-book.git
