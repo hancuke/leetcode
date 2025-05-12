@@ -6,8 +6,15 @@
     <description>Recent content in Introduction on Leetcode</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 11:59:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 10:18:38 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sort Algorithm</title>
+      <link>http://localhost:1313/posts/sort-algorithm/</link>
+      <pubDate>Mon, 12 May 2025 10:18:38 +0800</pubDate>
+      <guid>http://localhost:1313/posts/sort-algorithm/</guid>
+      <description>好的，没问题！作为你的数据结构与算法老师，很高兴带你一起学习排序算法。排序是计算机科学中最基本也最重要的算法之一，理解它能帮助我们更好地处理和组织数据。&#xA;我们将按照从简单到复杂、从直观到巧妙的顺序，一个一个地深入剖析常见的排序算法。每个算法，我们都会按照以下步骤来讲解：&#xA;理解题目与目的： 排序算法的通用目的是什么？这个特定算法的核心思想是什么？ 思路与实现： 如何一步步想到这个算法？它的具体执行流程是怎样的？提供 Go 语言实现。 复杂度分析与特点： 这个算法的时间复杂度、空间复杂度是多少？它是稳定的吗？（稳定排序是指相等元素的相对顺序在排序后保持不变）它是原地排序吗？（原地排序是指只需要常数额外空间的排序） 解题模式与适用场景： 这个算法的核心模式是什么？它适用于哪些情况？有哪些优缺点？ 泛化与对比： 与其他排序算法有什么异同？有没有变体？ 让我们开始吧！&#xA;排序算法的通用目的：&#xA;给定一个元素序列，将其重新排列，使得序列中的元素满足某种顺序关系（通常是升序或降序）。&#xA;考察内容：&#xA;排序算法主要考察的是如何通过比较和移动元素，高效地达到有序状态。不同的算法体现了不同的策略和权衡（如时间效率 vs. 空间效率，稳定性 vs. 原地性）。&#xA;1. 冒泡排序 (Bubble Sort) - 最直观的 O(n^2) 算法 # 1. 理解题目与目的：&#xA;冒泡排序是最简单的排序算法之一。它的目的是通过重复遍历待排序的数列，一次比较两个相邻的元素，如果它们的顺序错误就把它们交换过来。遍历数列的工作会重复进行，直到没有再需要交换，也就是说该数列已经排序完成。&#xA;核心思想：就像水中的气泡一样，较大的（或较小的，取决于排序方向）元素会逐渐“冒”到序列的末尾（或开头）。&#xA;2. 思路与实现：&#xA;思路：&#xA;从序列的第一个元素开始，比较它与下一个元素。 如果第一个元素比第二个元素大（以升序为例），则交换它们的位置。 移动到下一对相邻元素，重复步骤 2。 一轮遍历结束后，最大的元素就会被“冒泡”到序列的最后一个位置。 对剩余的未排序部分重复以上步骤，直到整个序列有序。 优化：如果在某一轮遍历中没有发生任何交换，说明序列已经有序，可以提前终止。 Go 语言实现：&#xA;package main import &amp;#34;fmt&amp;#34; // BubbleSort 冒泡排序实现 func BubbleSort(arr []int) []int { n := len(arr) // 外层循环控制遍历的轮数，每轮确定一个最大元素的位置 for i := 0; i &amp;lt; n-1; i++ { // 标记本轮是否发生了交换，用于优化 swapped := false // 内层循环负责比较和交换相邻元素，范围逐渐减小 for j := 0; j &amp;lt; n-1-i; j++ { // 如果前一个元素比后一个大，交换它们 if arr[j] &amp;gt; arr[j+1] { arr[j], arr[j+1] = arr[j+1], arr[j] swapped = true // 发生了交换 } } // 如果本轮没有发生交换，说明数组已经有序，提前退出 if !</description>
+    </item>
     <item>
       <title>Week1</title>
       <link>http://localhost:1313/posts/week1/</link>
